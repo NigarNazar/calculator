@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #ccc;
+
+}
+#display{
+    padding: 0 10px;
+    height: 100px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    overflow-x: scroll;
+    color: #ccc;
+}
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+.calculator {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 280px;
+    height: 70vh;
+    background-color: #000;
+    box-shadow: 2px 3px 15px 2px rgba(0, 0, 0, 80%);
+}
+
+.left-side {
+    padding-top: 20%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+.grid-item4,
+.grid-item8,
+.grid-item12,
+.grid-item16,
+.grid-item19 {
+    background-color: #e67e22;
+    font-size: 26px;
+}
+
+.grid-item1,
+.grid-item2,
+.grid-item3 {
+    background-color: #b2bec3;
+    font-size: 26px;
+}
+
+.grid-item5,
+.grid-item6,
+.grid-item7,
+.grid-item9,
+.grid-item10,
+.grid-item11,
+.grid-item13,
+.grid-item14,
+.grid-item15,
+.grid-item17,
+.grid-item18{
+    background-color:#4b4b4b;
+    font-size: 26px;
+}
